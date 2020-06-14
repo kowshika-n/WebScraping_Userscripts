@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         realtor details
 // @namespace    http://tampermonkey.net/
-// @version      kowshika-n
 // @description  Scrape data from realtor sire
-// @author       You
+// @version      0.1
+// @author       kowshika-n
+// @homepage     https://github.com/kowshika1
+// @downloadURL  https://github.com/kowshika1/WebScraping_Userscripts/raw/master/realtor_details.user.js
+// @updateURL    https://github.com/kowshika1/WebScraping_Userscripts/raw/master/realtor_details.user.js
 // @include      https://www.google.com/url?sa*
 // @include      https://www.realtor.com/realestateandhomes-detail*
 // @include      https://www.realtor.com/realestateandhomes-detail/*
