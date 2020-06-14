@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         realtor details
 // @namespace    http://tampermonkey.net/
-// @description  Scrape data from realtor sire
+// @description  Scrape data from realtor site
 // @version      0.1
 // @author       kowshika-n
 // @homepage     https://github.com/kowshika1
