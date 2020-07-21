@@ -4,7 +4,7 @@
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) [![Generic badge](https://img.shields.io/badge/HIRE-ME-brightgreen.svg)](https://www.upwork.com/o/profiles/users/~01839791ddb1ede3fa/)
 
-This repo includes a collection of Javascript Userscripts to scrape and download data from multiple websites.
+This repo includes a collection of Javascript Userscripts to scrape and download data from multiple websites. This enables scraping from directories and paginated results.
 
 
 ### Requirements
