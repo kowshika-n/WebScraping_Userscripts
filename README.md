@@ -8,10 +8,10 @@ This repo includes a collection of Javascript Userscripts to scrape and download
 
 
 ### Requirements
-  - [TamperMonkey](https://www.tampermonkey.net/)
-  - [Google Chrome](https://www.google.com/chrome/) or [Firefox](https://www.firefox.com/)
+  - Browsers : [Google Chrome](https://www.google.com/chrome/) or [Firefox](https://www.firefox.com/) or [Edge](https://www.microsoft.com/en-us/edge?form=MA13DE&OCID=MA13DE)
+  - Browser Extension : [TamperMonkey](https://www.tampermonkey.net/)
 
 
 ### Hire me
-Looking for someone to automate a complex scraping project at affordable rates? Get in [touch](https://www.upwork.com/o/profiles/users/~01839791ddb1ede3fa/).
+Looking for someone to automate a complex scraping project at affordable rates? Get in [touch](https://www.upwork.com/o/profiles/users/~01839791ddb1ede3fa/)0.
 
