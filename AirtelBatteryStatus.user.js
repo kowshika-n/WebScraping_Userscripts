@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Airtel Wifi Battery Status Notifier
+// @name         Airtel Dongle Battery Status Notifier
 // @version      0.1
 // @author       kowshika
 // @match        http://airtel.4g.wi-fi
