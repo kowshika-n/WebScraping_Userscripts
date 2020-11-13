@@ -29,6 +29,20 @@ function waitForElementToDisplay(selector, time) {
     }
 }
 
+function waitForElementToDisplayWithXpath(xpath, time) {
+    document.getElementByXPath = function(sValue) { var a = this.evaluate(sValue, this, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null); if (a.snapshotLength > 0) { return a.snapshotItem(0); } };
+    if(document.getElementByXPath(xpath) != null) {
+        console.log(xpath + ' found');
+        return;
+    }
+    else {
+        setTimeout(function() {
+            waitForElementToDisplayWithXpath(xpath, time);
+        }, time);
+    }
+}
+
+
 
 (function() {
     'use strict';
@@ -46,6 +60,7 @@ function waitForElementToDisplay(selector, time) {
     let sleepFunc = async function() { await sleep(3000); };
 
     document.getElementByXPath = function(sValue) { var a = this.evaluate(sValue, this, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null); if (a.snapshotLength > 0) { return a.snapshotItem(0); } };
+    document.getElementsByXPath = function(sValue){ var aResult = new Array();var a = this.evaluate(sValue, this, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);for ( var i = 0 ; i < a.snapshotLength ; i++ ){aResult.push(a.snapshotItem(i));}return aResult;};
     sleepFunc();
 
     function getText(xpath){
@@ -79,8 +94,19 @@ function waitForElementToDisplay(selector, time) {
                     }
                 }
 
-                heavyWork();
+                //heavyWork();
+                waitForElementToDisplayWithXpath("//a[contains(@href, 'detail/')]", 10000)
                 document.getElementById('pnlSortBy').scrollIntoView();
+                var count = document.getElementsByXPath("//a[contains(@href, 'detail/')]").length;
+                for (var i=1; i <= count; i++){
+                    textData += document.getElementByXPath("(//a[contains(@href, 'detail/')])["+ i.toString()+ "]").href + "\n"
+                }
+
+                if (textData.length > 40){
+                    saveText("listingLinks.txt", textData);
+                } else {
+                    console.log('No Data found.')
+                }
             }
 
             if (has(window.location.href, '/detail/')){
@@ -110,7 +136,7 @@ function waitForElementToDisplay(selector, time) {
                 textData += Capacity + " | "
                 textData += window.location.href + " | "
 
-                if (textData.length > 20){
+                if (textData.length > 80){
                     saveText("listingData.txt", textData);
                 } else {
                     console.log('No Data found.')
