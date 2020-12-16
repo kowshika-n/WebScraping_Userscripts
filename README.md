@@ -16,5 +16,5 @@ This repo includes a collection of Javascript Userscripts to scrape and download
 
 
 ### Hire me
-Looking for someone to automate a complex scraping project at affordable rates? Get in [touch](https://www.upwork.com/o/profiles/users/~01839791ddb1ede3fa/)
+Looking for someone to automate a project at affordable rates? Get in [touch](https://www.upwork.com/o/profiles/users/~01839791ddb1ede3fa/)
 
