@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Etsy Product data
+// @name         Etsy UK Product data
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Download product info from etsy
