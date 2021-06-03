@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Deriv AutoClicker
 // @namespace    Deriv_AutoClicker_Script
-// @version      0.2
+// @version      0.3
 // @description  Click on Purchase when matching conditions
-// @author       Nivetha
+// @author       Kowshika
 // @match        https://smarttrader.deriv.app/en/trading.html
 // @match        https://smarttrader.deriv.app/en/trading.html*
 // @include      https://smarttrader.deriv.app/en/trading.html*
